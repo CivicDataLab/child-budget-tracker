@@ -13,7 +13,7 @@ $ python3 -m pip install jupyter
 
 # Clone Repository
 $ git clone https://github.com/CivicDataLab/child-budget-tracker.git
-$ cd child-budget-tracke
+$ cd child-budget-tracker
 
 # Run the server
 $ jupyter notebook
