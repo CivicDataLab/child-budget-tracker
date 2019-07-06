@@ -1,0 +1,1331 @@
+{
+    "dashboards": [
+        {
+            "__Dashboard__": {
+                "dashboard_title": "District Treasury Child Budget Tracker for Andhra Pradesh", 
+                "slug": "ap-child-budget-tracker", 
+                "json_metadata": "{\"timed_refresh_immune_slices\": [], \"expanded_slices\": {}, \"filter_immune_slice_fields\": {}, \"filter_immune_slices\": [], \"remote_id\": 51, \"default_filters\": \"{}\"}", 
+                "description": null, 
+                "slices": [
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null, 
+                            "datasource_id": 135, 
+                            "viz_type": "filter_box", 
+                            "slice_name": " Filters", 
+                            "perm": "[Krishna District AP].[AP_Child_Treasury_Data](id:135)", 
+                            "id": 375, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T14:49:14"
+                            }, 
+                            "params": "{\"schema\": \"AP_Child_Treasury_Data\", \"url_params\": {}, \"show_sqla_time_granularity\": false, \"date_filter\": false, \"time_range\": \"No filter\", \"filters\": [{\"col\": \"Major Head Description\", \"val\": \"Pension and Other Retirement Benefits\", \"op\": \"!=\"}, {\"col\": \"Major Head Description\", \"val\": \"Secretariat Social Services\", \"op\": \"!=\"}], \"show_druid_time_granularity\": false, \"where\": \"\", \"adhoc_filters\": [{\"comparator\": \"Pension and Other Retirement Benefits\", \"expressionType\": \"SIMPLE\", \"clause\": \"WHERE\", \"fromFormData\": true, \"sqlExpression\": null, \"operator\": \"!=\", \"filterOptionName\": \"filter_a4kns0l7q3_co009w9qcya\", \"subject\": \"Major Head Description\"}, {\"comparator\": \"Secretariat Social Services\", \"expressionType\": \"SIMPLE\", \"clause\": \"WHERE\", \"fromFormData\": true, \"sqlExpression\": null, \"operator\": \"!=\", \"filterOptionName\": \"filter_aox149fxvt9_jbk31hkskan\", \"subject\": \"Major Head Description\"}], \"granularity_sqla\": \"Timestamp\", \"metric\": {\"hasCustomLabel\": false, \"expressionType\": \"SIMPLE\", \"fromFormData\": false, \"label\": \"SUM(Amount)\", \"column\": {\"optionName\": \"_col_Amount\", \"description\": null, \"filterable\": true, \"expression\": \"\", \"is_dttm\": false, \"verbose_name\": null, \"type\": \"BIGINT\", \"groupby\": true, \"column_name\": \"Amount\"}, \"sqlExpression\": null, \"aggregate\": \"SUM\", \"optionName\": \"metric_iuzqb8im21k_ekfvzmzpnej\"}, \"slice_id\": 375, \"viz_type\": \"filter_box\", \"having_filters\": [], \"database_name\": \"Krishna District AP\", \"remote_id\": 375, \"groupby\": [\"Year\", \"District\", \"Major Head Description\", \"Sub Major Head Description\", \"Minor Head Description\", \"Group Sub Head Description\", \"Sub Head Description\", \"Detailed Head Description\", \"Sub Detailed Head Description\"], \"show_druid_time_origin\": false, \"datasource\": \"135__table\", \"datasource_name\": \"AP_Child_Treasury_Data\", \"show_sqla_time_column\": false, \"time_grain_sqla\": null, \"having\": \"\", \"instant_filtering\": true}", 
+                            "changed_by_fk": 1, 
+                            "datasource_name": "AP_Child_Treasury_Data", 
+                            "created_by_fk": 44, 
+                            "datasource_type": "table", 
+                            "changed_on": {
+                                "__datetime__": "2019-07-06T07:12:53"
+                            }, 
+                            "description": null
+                        }
+                    }, 
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null, 
+                            "datasource_id": 135, 
+                            "viz_type": "line", 
+                            "slice_name": "Alloted Expenditure over the Financial across different District Treasuries", 
+                            "perm": "[Krishna District AP].[AP_Child_Treasury_Data](id:135)", 
+                            "id": 377, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T14:51:57"
+                            }, 
+                            "params": "{\"url_params\": {}, \"bottom_margin\": \"auto\", \"x_ticks_layout\": \"auto\", \"y_axis_label\": \"Amount in Rs (1G = 100 Crores, 100M = 10 Crores)\", \"row_limit\": 50000, \"metric\": {\"hasCustomLabel\": false, \"expressionType\": \"SIMPLE\", \"fromFormData\": false, \"label\": \"SUM(Amount)\", \"column\": {\"optionName\": \"_col_Amount\", \"type\": \"BIGINT\", \"description\": null, \"filterable\": true, \"verbose_name\": null, \"is_dttm\": false, \"expression\": \"\", \"groupby\": true, \"column_name\": \"Amount\"}, \"sqlExpression\": null, \"aggregate\": \"SUM\", \"optionName\": \"metric_iuzqb8im21k_ekfvzmzpnej\"}, \"resample_fillmethod\": null, \"show_brush\": \"yes\", \"left_margin\": 75, \"annotation_layers\": [], \"show_legend\": true, \"filters\": [{\"col\": \"Major Head Description\", \"val\": \"Pension and Other Retirement Benefits\", \"op\": \"!=\"}, {\"col\": \"Major Head Description\", \"val\": \"Secretariat Social Services\", \"op\": \"!=\"}, {\"col\": \"Sub Head Description\", \"val\": [\"Services for Children in need of Care and Protection\"], \"op\": \"in\"}, {\"col\": \"Year\", \"val\": [2014], \"op\": \"in\"}], \"database_name\": \"Krishna District AP\", \"granularity_sqla\": \"Timestamp\", \"y_axis_showminmax\": false, \"rolling_type\": \"None\", \"viz_type\": \"line\", \"show_markers\": false, \"having_filters\": [], \"order_desc\": true, \"remote_id\": 377, \"y_log_scale\": false, \"x_axis_label\": \"Date\", \"show_druid_time_origin\": false, \"instant_filtering\": true, \"color_scheme\": \"d3Category20b\", \"y_axis_format\": \".3s\", \"schema\": \"AP_Child_Treasury_Data\", \"line_interpolation\": \"linear\", \"resample_rule\": null, \"show_sqla_time_granularity\": true, \"date_filter\": false, \"x_axis_format\": \"smart_date\", \"metrics\": [{\"hasCustomLabel\": true, \"expressionType\": \"SIMPLE\", \"fromFormData\": true, \"label\": \"Total Allotment\", \"column\": {\"optionName\": \"_col_Amount\", \"type\": \"BIGINT\", \"description\": null, \"filterable\": true, \"expression\": \"\", \"is_dttm\": false, \"verbose_name\": null, \"groupby\": true, \"column_name\": \"Amount\"}, \"sqlExpression\": null, \"aggregate\": \"SUM\", \"optionName\": \"metric_sgbml5ebg_xsytkopf35\"}], \"comparison_type\": \"values\", \"show_druid_time_granularity\": false, \"adhoc_filters\": [{\"comparator\": \"Pension and Other Retirement Benefits\", \"expressionType\": \"SIMPLE\", \"clause\": \"WHERE\", \"fromFormData\": true, \"sqlExpression\": null, \"operator\": \"!=\", \"filterOptionName\": \"filter_a4kns0l7q3_co009w9qcya\", \"subject\": \"Major Head Description\"}, {\"comparator\": \"Secretariat Social Services\", \"expressionType\": \"SIMPLE\", \"clause\": \"WHERE\", \"fromFormData\": true, \"sqlExpression\": null, \"operator\": \"!=\", \"filterOptionName\": \"filter_aox149fxvt9_jbk31hkskan\", \"subject\": \"Major Head Description\"}], \"time_range\": \"No filter\", \"y_axis_bounds\": [null, null], \"timeseries_limit_metric\": null, \"slice_id\": 377, \"where\": \"\", \"resample_how\": null, \"having\": \"\", \"rich_tooltip\": true, \"datasource\": \"135__table\", \"x_axis_showminmax\": false, \"datasource_name\": \"AP_Child_Treasury_Data\", \"contribution\": false, \"show_sqla_time_column\": false, \"time_grain_sqla\": \"P1M\", \"groupby\": []}", 
+                            "changed_by_fk": 1, 
+                            "datasource_name": "AP_Child_Treasury_Data", 
+                            "created_by_fk": 44, 
+                            "datasource_type": "table", 
+                            "changed_on": {
+                                "__datetime__": "2019-07-06T07:12:53"
+                            }, 
+                            "description": null
+                        }
+                    }, 
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null, 
+                            "datasource_id": 135, 
+                            "viz_type": "filter_box", 
+                            "slice_name": "Filters", 
+                            "perm": "[Krishna District AP].[AP_Child_Treasury_Data](id:135)", 
+                            "id": 376, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T14:50:25"
+                            }, 
+                            "params": "{\"time_grain_sqla\": null, \"url_params\": {}, \"show_sqla_time_granularity\": false, \"date_filter\": false, \"time_range\": \"No filter\", \"schema\": \"AP_Child_Treasury_Data\", \"filters\": [{\"col\": \"Major Head Description\", \"val\": \"Pension and Other Retirement Benefits\", \"op\": \"!=\"}, {\"col\": \"Major Head Description\", \"val\": \"Secretariat Social Services\", \"op\": \"!=\"}], \"show_druid_time_granularity\": false, \"adhoc_filters\": [{\"comparator\": \"Pension and Other Retirement Benefits\", \"expressionType\": \"SIMPLE\", \"clause\": \"WHERE\", \"fromFormData\": true, \"sqlExpression\": null, \"operator\": \"!=\", \"filterOptionName\": \"filter_a4kns0l7q3_co009w9qcya\", \"subject\": \"Major Head Description\"}, {\"comparator\": \"Secretariat Social Services\", \"expressionType\": \"SIMPLE\", \"clause\": \"WHERE\", \"fromFormData\": true, \"sqlExpression\": null, \"operator\": \"!=\", \"filterOptionName\": \"filter_aox149fxvt9_jbk31hkskan\", \"subject\": \"Major Head Description\"}], \"granularity_sqla\": \"Timestamp\", \"metric\": {\"hasCustomLabel\": false, \"expressionType\": \"SIMPLE\", \"fromFormData\": false, \"label\": \"SUM(Amount)\", \"column\": {\"optionName\": \"_col_Amount\", \"description\": null, \"filterable\": true, \"verbose_name\": null, \"expression\": \"\", \"is_dttm\": false, \"type\": \"BIGINT\", \"groupby\": true, \"column_name\": \"Amount\"}, \"sqlExpression\": null, \"aggregate\": \"SUM\", \"optionName\": \"metric_iuzqb8im21k_ekfvzmzpnej\"}, \"slice_id\": 376, \"viz_type\": \"filter_box\", \"having_filters\": [], \"database_name\": \"Krishna District AP\", \"remote_id\": 376, \"groupby\": [\"Year\", \"Major Head Description\", \"Sub Major Head Description\", \"Minor Head Description\", \"Group Sub Head Description\", \"Sub Head Description\", \"Detailed Head Description\", \"Sub Detailed Head Description\"], \"show_druid_time_origin\": false, \"datasource\": \"135__table\", \"datasource_name\": \"AP_Child_Treasury_Data\", \"show_sqla_time_column\": false, \"where\": \"\", \"having\": \"\", \"instant_filtering\": true}", 
+                            "changed_by_fk": 1, 
+                            "datasource_name": "AP_Child_Treasury_Data", 
+                            "created_by_fk": 44, 
+                            "datasource_type": "table", 
+                            "changed_on": {
+                                "__datetime__": "2019-07-06T07:12:53"
+                            }, 
+                            "description": null
+                        }
+                    }, 
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null, 
+                            "datasource_id": 135, 
+                            "viz_type": "dist_bar", 
+                            "slice_name": "Total Alloted Expenditure District Wise", 
+                            "perm": "[Krishna District AP].[AP_Child_Treasury_Data](id:135)", 
+                            "id": 378, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T14:53:51"
+                            }, 
+                            "params": "{\"url_params\": {}, \"bottom_margin\": 150, \"x_ticks_layout\": \"auto\", \"y_axis_label\": \"Amount in Rs (1G = 100 Crores, 100M = 10 Crores)\", \"row_limit\": 50000, \"metric\": {\"hasCustomLabel\": false, \"expressionType\": \"SIMPLE\", \"fromFormData\": false, \"label\": \"SUM(Amount)\", \"column\": {\"optionName\": \"_col_Amount\", \"description\": null, \"filterable\": true, \"expression\": \"\", \"is_dttm\": false, \"verbose_name\": null, \"type\": \"BIGINT\", \"groupby\": true, \"column_name\": \"Amount\"}, \"sqlExpression\": null, \"aggregate\": \"SUM\", \"optionName\": \"metric_iuzqb8im21k_ekfvzmzpnej\"}, \"resample_fillmethod\": null, \"show_brush\": \"auto\", \"left_margin\": \"auto\", \"annotation_layers\": [], \"show_legend\": true, \"database_name\": \"Krishna District AP\", \"filters\": [{\"col\": \"Major Head Description\", \"val\": \"Pension and Other Retirement Benefits\", \"op\": \"!=\"}, {\"col\": \"Major Head Description\", \"val\": \"Secretariat Social Services\", \"op\": \"!=\"}], \"show_controls\": false, \"granularity_sqla\": \"Timestamp\", \"y_axis_showminmax\": false, \"rolling_type\": \"None\", \"viz_type\": \"dist_bar\", \"show_markers\": false, \"having_filters\": [], \"order_desc\": true, \"remote_id\": 378, \"y_log_scale\": false, \"x_axis_label\": \"Districts\", \"show_druid_time_origin\": false, \"order_bars\": false, \"instant_filtering\": true, \"color_scheme\": \"d3Category20b\", \"y_axis_format\": \".3s\", \"columns\": [], \"schema\": \"AP_Child_Treasury_Data\", \"line_interpolation\": \"linear\", \"show_bar_value\": true, \"resample_rule\": null, \"show_sqla_time_granularity\": true, \"date_filter\": false, \"x_axis_format\": \"smart_date\", \"metrics\": [{\"hasCustomLabel\": false, \"expressionType\": \"SIMPLE\", \"fromFormData\": false, \"label\": \"SUM(Amount)\", \"column\": {\"optionName\": \"_col_Amount\", \"type\": \"BIGINT\", \"description\": null, \"filterable\": true, \"verbose_name\": null, \"is_dttm\": false, \"expression\": \"\", \"groupby\": true, \"column_name\": \"Amount\"}, \"sqlExpression\": null, \"aggregate\": \"SUM\", \"optionName\": \"metric_hmhq2vkc7uu_rsrjxin3gq\"}], \"comparison_type\": \"values\", \"show_druid_time_granularity\": false, \"adhoc_filters\": [{\"comparator\": \"Pension and Other Retirement Benefits\", \"expressionType\": \"SIMPLE\", \"clause\": \"WHERE\", \"fromFormData\": true, \"sqlExpression\": null, \"operator\": \"!=\", \"filterOptionName\": \"filter_a4kns0l7q3_co009w9qcya\", \"subject\": \"Major Head Description\"}, {\"comparator\": \"Secretariat Social Services\", \"expressionType\": \"SIMPLE\", \"clause\": \"WHERE\", \"fromFormData\": true, \"sqlExpression\": null, \"operator\": \"!=\", \"filterOptionName\": \"filter_aox149fxvt9_jbk31hkskan\", \"subject\": \"Major Head Description\"}], \"time_range\": \"No filter\", \"y_axis_bounds\": [null, null], \"timeseries_limit_metric\": null, \"slice_id\": 378, \"where\": \"\", \"resample_how\": null, \"reduce_x_ticks\": false, \"having\": \"\", \"rich_tooltip\": true, \"datasource\": \"135__table\", \"x_axis_showminmax\": false, \"datasource_name\": \"AP_Child_Treasury_Data\", \"contribution\": false, \"show_sqla_time_column\": false, \"time_grain_sqla\": \"P1M\", \"groupby\": [\"District\"], \"bar_stacked\": false}", 
+                            "changed_by_fk": 1, 
+                            "datasource_name": "AP_Child_Treasury_Data", 
+                            "created_by_fk": 44, 
+                            "datasource_type": "table", 
+                            "changed_on": {
+                                "__datetime__": "2019-07-06T07:12:53"
+                            }, 
+                            "description": null
+                        }
+                    }, 
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null, 
+                            "datasource_id": 135, 
+                            "viz_type": "table", 
+                            "slice_name": "Total Amount Allocations District Wise - Table", 
+                            "perm": "[Krishna District AP].[AP_Child_Treasury_Data](id:135)", 
+                            "id": 379, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T15:35:46"
+                            }, 
+                            "params": "{\"url_params\": {}, \"bottom_margin\": 125, \"include_time\": false, \"datasource_name\": \"AP_Child_Treasury_Data\", \"x_ticks_layout\": \"auto\", \"y_axis_label\": \"Amount in Rs (1G = 100 Crores, 100M = 10 Crores)\", \"row_limit\": 50000, \"metric\": {\"hasCustomLabel\": false, \"expressionType\": \"SIMPLE\", \"fromFormData\": false, \"label\": \"SUM(Amount)\", \"column\": {\"optionName\": \"_col_Amount\", \"type\": \"BIGINT\", \"description\": null, \"filterable\": true, \"expression\": \"\", \"is_dttm\": false, \"verbose_name\": null, \"groupby\": true, \"column_name\": \"Amount\"}, \"sqlExpression\": null, \"aggregate\": \"SUM\", \"optionName\": \"metric_iuzqb8im21k_ekfvzmzpnej\"}, \"resample_fillmethod\": null, \"show_brush\": \"auto\", \"table_filter\": false, \"line_interpolation\": \"linear\", \"annotation_layers\": [], \"show_legend\": true, \"database_name\": \"Krishna District AP\", \"filters\": [{\"col\": \"Major Head Description\", \"val\": \"Pension and Other Retirement Benefits\", \"op\": \"!=\"}, {\"col\": \"Major Head Description\", \"val\": \"Secretariat Social Services\", \"op\": \"!=\"}], \"show_controls\": false, \"granularity_sqla\": \"Timestamp\", \"page_length\": 0, \"all_columns\": [], \"viz_type\": \"table\", \"show_markers\": false, \"having_filters\": [], \"order_desc\": true, \"remote_id\": 379, \"y_log_scale\": false, \"x_axis_label\": \"Districts\", \"show_druid_time_origin\": false, \"order_bars\": false, \"instant_filtering\": true, \"left_margin\": \"auto\", \"color_scheme\": \"d3Category20b\", \"y_axis_format\": \".3s\", \"columns\": [], \"schema\": \"AP_Child_Treasury_Data\", \"y_axis_showminmax\": false, \"show_bar_value\": true, \"resample_rule\": null, \"show_sqla_time_granularity\": true, \"date_filter\": false, \"table_timestamp_format\": \"%Y-%m-%d %H:%M:%S\", \"metrics\": [{\"hasCustomLabel\": false, \"expressionType\": \"SIMPLE\", \"fromFormData\": false, \"label\": \"SUM(Amount)\", \"column\": {\"optionName\": \"_col_Amount\", \"description\": null, \"filterable\": true, \"type\": \"BIGINT\", \"is_dttm\": false, \"verbose_name\": null, \"expression\": \"\", \"groupby\": true, \"column_name\": \"Amount\"}, \"sqlExpression\": null, \"aggregate\": \"SUM\", \"optionName\": \"metric_wqtzj1qrmtt_fe1hfswi7m7\"}], \"comparison_type\": \"values\", \"show_druid_time_granularity\": false, \"adhoc_filters\": [{\"comparator\": \"Pension and Other Retirement Benefits\", \"expressionType\": \"SIMPLE\", \"clause\": \"WHERE\", \"fromFormData\": true, \"sqlExpression\": null, \"operator\": \"!=\", \"filterOptionName\": \"filter_a4kns0l7q3_co009w9qcya\", \"subject\": \"Major Head Description\"}, {\"comparator\": \"Secretariat Social Services\", \"expressionType\": \"SIMPLE\", \"clause\": \"WHERE\", \"fromFormData\": true, \"sqlExpression\": null, \"operator\": \"!=\", \"filterOptionName\": \"filter_aox149fxvt9_jbk31hkskan\", \"subject\": \"Major Head Description\"}], \"time_range\": \"No filter\", \"y_axis_bounds\": [null, null], \"include_search\": false, \"percent_metrics\": [], \"timeseries_limit_metric\": null, \"rolling_type\": \"None\", \"where\": \"\", \"resample_how\": null, \"order_by_cols\": [], \"reduce_x_ticks\": false, \"color_pn\": true, \"having\": \"\", \"rich_tooltip\": true, \"align_pn\": false, \"datasource\": \"135__table\", \"x_axis_showminmax\": false, \"x_axis_format\": \"smart_date\", \"contribution\": false, \"show_sqla_time_column\": false, \"time_grain_sqla\": \"P1M\", \"groupby\": [\"District\"], \"bar_stacked\": false}", 
+                            "changed_by_fk": 1, 
+                            "datasource_name": "AP_Child_Treasury_Data", 
+                            "created_by_fk": 44, 
+                            "datasource_type": "table", 
+                            "changed_on": {
+                                "__datetime__": "2019-07-06T07:12:53"
+                            }, 
+                            "description": null
+                        }
+                    }, 
+                    {
+                        "__Slice__": {
+                            "cache_timeout": null, 
+                            "datasource_id": 135, 
+                            "viz_type": "box_plot", 
+                            "slice_name": "District wise Statistics of Total Alloted Expenditure", 
+                            "perm": "[Krishna District AP].[AP_Child_Treasury_Data](id:135)", 
+                            "id": 381, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T15:57:06"
+                            }, 
+                            "params": "{\"url_params\": {}, \"bottom_margin\": 125, \"include_time\": false, \"datasource_name\": \"AP_Child_Treasury_Data\", \"x_ticks_layout\": \"auto\", \"y_axis_label\": \"Amount in Rs (1G = 100 Crores, 100M = 10 Crores)\", \"row_limit\": 50000, \"metric\": {\"hasCustomLabel\": false, \"expressionType\": \"SIMPLE\", \"fromFormData\": false, \"label\": \"SUM(Amount)\", \"column\": {\"optionName\": \"_col_Amount\", \"description\": null, \"filterable\": true, \"verbose_name\": null, \"expression\": \"\", \"is_dttm\": false, \"type\": \"BIGINT\", \"groupby\": true, \"column_name\": \"Amount\"}, \"sqlExpression\": null, \"aggregate\": \"SUM\", \"optionName\": \"metric_2oxf1wacd4s_ahwi7o2r56c\"}, \"resample_fillmethod\": null, \"show_brush\": \"auto\", \"table_filter\": false, \"line_interpolation\": \"linear\", \"annotation_layers\": [], \"show_legend\": true, \"database_name\": \"Krishna District AP\", \"filters\": [{\"col\": \"Major Head Description\", \"val\": \"Pension and Other Retirement Benefits\", \"op\": \"!=\"}, {\"col\": \"Major Head Description\", \"val\": \"Secretariat Social Services\", \"op\": \"!=\"}], \"show_controls\": false, \"granularity_sqla\": \"Timestamp\", \"page_length\": 0, \"all_columns\": [], \"viz_type\": \"box_plot\", \"show_markers\": false, \"having_filters\": [], \"order_desc\": true, \"remote_id\": 381, \"y_log_scale\": false, \"x_axis_label\": \"Districts\", \"show_druid_time_origin\": false, \"order_bars\": false, \"instant_filtering\": true, \"left_margin\": \"auto\", \"color_scheme\": \"d3Category10\", \"y_axis_format\": \".3s\", \"columns\": [], \"schema\": \"AP_Child_Treasury_Data\", \"y_axis_showminmax\": false, \"show_bar_value\": true, \"resample_rule\": null, \"show_sqla_time_granularity\": true, \"date_filter\": false, \"table_timestamp_format\": \"%Y-%m-%d %H:%M:%S\", \"metrics\": [{\"hasCustomLabel\": true, \"expressionType\": \"SIMPLE\", \"fromFormData\": true, \"label\": \"Total Expenditure\", \"column\": {\"optionName\": \"_col_Amount\", \"description\": null, \"filterable\": true, \"expression\": \"\", \"is_dttm\": false, \"verbose_name\": null, \"type\": \"BIGINT\", \"groupby\": true, \"column_name\": \"Amount\"}, \"sqlExpression\": null, \"aggregate\": \"SUM\", \"optionName\": \"metric_lyj3w4cvzqi_eapr336u9cr\"}], \"comparison_type\": \"values\", \"show_druid_time_granularity\": false, \"adhoc_filters\": [{\"comparator\": \"Pension and Other Retirement Benefits\", \"expressionType\": \"SIMPLE\", \"clause\": \"WHERE\", \"fromFormData\": true, \"sqlExpression\": null, \"operator\": \"!=\", \"filterOptionName\": \"filter_a4kns0l7q3_co009w9qcya\", \"subject\": \"Major Head Description\"}, {\"comparator\": \"Secretariat Social Services\", \"expressionType\": \"SIMPLE\", \"clause\": \"WHERE\", \"fromFormData\": true, \"sqlExpression\": null, \"operator\": \"!=\", \"filterOptionName\": \"filter_aox149fxvt9_jbk31hkskan\", \"subject\": \"Major Head Description\"}], \"time_range\": \"No filter\", \"having\": \"\", \"y_axis_bounds\": [null, null], \"include_search\": false, \"percent_metrics\": [], \"timeseries_limit_metric\": null, \"slice_id\": 381, \"rolling_type\": \"None\", \"where\": \"\", \"resample_how\": null, \"order_by_cols\": [], \"reduce_x_ticks\": false, \"color_pn\": true, \"groupby\": [\"District\"], \"rich_tooltip\": true, \"align_pn\": false, \"datasource\": \"135__table\", \"x_axis_showminmax\": false, \"x_axis_format\": \"smart_date\", \"contribution\": false, \"show_sqla_time_column\": false, \"time_grain_sqla\": \"P1M\", \"whisker_options\": \"Tukey\", \"bar_stacked\": false}", 
+                            "changed_by_fk": 1, 
+                            "datasource_name": "AP_Child_Treasury_Data", 
+                            "created_by_fk": 44, 
+                            "datasource_type": "table", 
+                            "changed_on": {
+                                "__datetime__": "2019-07-06T07:12:53"
+                            }, 
+                            "description": null
+                        }
+                    }
+                ], 
+                "position_json": "{\n    \"DASHBOARD_CHART_TYPE-JkD2GGTOkb\": {\n        \"children\": [],\n        \"id\": \"DASHBOARD_CHART_TYPE-JkD2GGTOkb\",\n        \"meta\": {\n            \"chartId\": 376,\n            \"height\": 30,\n            \"sliceName\": \"Filters\",\n            \"width\": 3\n        },\n        \"type\": \"DASHBOARD_CHART_TYPE\"\n    },\n    \"DASHBOARD_CHART_TYPE-Y_2eq8DVwC\": {\n        \"children\": [],\n        \"id\": \"DASHBOARD_CHART_TYPE-Y_2eq8DVwC\",\n        \"meta\": {\n            \"chartId\": 379,\n            \"height\": 40,\n            \"sliceName\": \"Total Amount Allocations District Wise - Table\",\n            \"width\": 12\n        },\n        \"type\": \"DASHBOARD_CHART_TYPE\"\n    },\n    \"DASHBOARD_CHART_TYPE-h2c3zz0IPa\": {\n        \"children\": [],\n        \"id\": \"DASHBOARD_CHART_TYPE-h2c3zz0IPa\",\n        \"meta\": {\n            \"chartId\": 381,\n            \"height\": 76,\n            \"sliceName\": \"District wise Statistics of Total Alloted Expenditure\",\n            \"width\": 12\n        },\n        \"type\": \"DASHBOARD_CHART_TYPE\"\n    },\n    \"DASHBOARD_CHART_TYPE-xhegh8jGRf\": {\n        \"children\": [],\n        \"id\": \"DASHBOARD_CHART_TYPE-xhegh8jGRf\",\n        \"meta\": {\n            \"chartId\": 375,\n            \"height\": 80,\n            \"sliceName\": \" Filters\",\n            \"width\": 3\n        },\n        \"type\": \"DASHBOARD_CHART_TYPE\"\n    },\n    \"DASHBOARD_CHART_TYPE-zBvPQd0c1H\": {\n        \"children\": [],\n        \"id\": \"DASHBOARD_CHART_TYPE-zBvPQd0c1H\",\n        \"meta\": {\n            \"chartId\": 377,\n            \"height\": 77,\n            \"sliceName\": \"Alloted Expenditure over the Financial across different District Treasuries\",\n            \"width\": 9\n        },\n        \"type\": \"DASHBOARD_CHART_TYPE\"\n    },\n    \"DASHBOARD_CHART_TYPE-zDf9H2OH_k\": {\n        \"children\": [],\n        \"id\": \"DASHBOARD_CHART_TYPE-zDf9H2OH_k\",\n        \"meta\": {\n            \"chartId\": 378,\n            \"height\": 70,\n            \"sliceName\": \"Total Alloted Expenditure District Wise\",\n            \"width\": 9\n        },\n        \"type\": \"DASHBOARD_CHART_TYPE\"\n    },\n    \"DASHBOARD_GRID_ID\": {\n        \"children\": [\n            \"DASHBOARD_TABS_TYPE-vAYlRWw1gL\"\n        ],\n        \"id\": \"DASHBOARD_GRID_ID\",\n        \"type\": \"DASHBOARD_GRID_TYPE\"\n    },\n    \"DASHBOARD_HEADER_ID\": {\n        \"id\": \"DASHBOARD_HEADER_ID\",\n        \"meta\": {\n            \"text\": \"District Treasury Child Budget Tracker for Andhra Pradesh\"\n        },\n        \"type\": \"DASHBOARD_HEADER_TYPE\"\n    },\n    \"DASHBOARD_ROOT_ID\": {\n        \"children\": [\n            \"DASHBOARD_GRID_ID\"\n        ],\n        \"id\": \"DASHBOARD_ROOT_ID\",\n        \"type\": \"DASHBOARD_ROOT_TYPE\"\n    },\n    \"DASHBOARD_ROW_TYPE-Z7z387A4UM\": {\n        \"children\": [\n            \"DASHBOARD_CHART_TYPE-JkD2GGTOkb\",\n            \"DASHBOARD_CHART_TYPE-zDf9H2OH_k\"\n        ],\n        \"id\": \"DASHBOARD_ROW_TYPE-Z7z387A4UM\",\n        \"meta\": {\n            \"background\": \"BACKGROUND_TRANSPARENT\"\n        },\n        \"type\": \"DASHBOARD_ROW_TYPE\"\n    },\n    \"DASHBOARD_ROW_TYPE-lYKxhUKRx8\": {\n        \"children\": [\n            \"DASHBOARD_CHART_TYPE-Y_2eq8DVwC\"\n        ],\n        \"id\": \"DASHBOARD_ROW_TYPE-lYKxhUKRx8\",\n        \"meta\": {\n            \"background\": \"BACKGROUND_TRANSPARENT\"\n        },\n        \"type\": \"DASHBOARD_ROW_TYPE\"\n    },\n    \"DASHBOARD_ROW_TYPE-pHP-zTpnZy\": {\n        \"children\": [\n            \"DASHBOARD_CHART_TYPE-h2c3zz0IPa\"\n        ],\n        \"id\": \"DASHBOARD_ROW_TYPE-pHP-zTpnZy\",\n        \"meta\": {\n            \"background\": \"BACKGROUND_TRANSPARENT\"\n        },\n        \"type\": \"DASHBOARD_ROW_TYPE\"\n    },\n    \"DASHBOARD_ROW_TYPE-vjE30yvSWt\": {\n        \"children\": [\n            \"DASHBOARD_CHART_TYPE-xhegh8jGRf\",\n            \"DASHBOARD_CHART_TYPE-zBvPQd0c1H\"\n        ],\n        \"id\": \"DASHBOARD_ROW_TYPE-vjE30yvSWt\",\n        \"meta\": {\n            \"background\": \"BACKGROUND_TRANSPARENT\"\n        },\n        \"type\": \"DASHBOARD_ROW_TYPE\"\n    },\n    \"DASHBOARD_TABS_TYPE-vAYlRWw1gL\": {\n        \"children\": [\n            \"DASHBOARD_TAB_TYPE-YI5J-oKale\",\n            \"DASHBOARD_TAB_TYPE--EpBDp5bo\"\n        ],\n        \"id\": \"DASHBOARD_TABS_TYPE-vAYlRWw1gL\",\n        \"meta\": {},\n        \"type\": \"DASHBOARD_TABS_TYPE\"\n    },\n    \"DASHBOARD_TAB_TYPE--EpBDp5bo\": {\n        \"children\": [\n            \"DASHBOARD_ROW_TYPE-Z7z387A4UM\",\n            \"DASHBOARD_ROW_TYPE-lYKxhUKRx8\",\n            \"DASHBOARD_ROW_TYPE-pHP-zTpnZy\"\n        ],\n        \"id\": \"DASHBOARD_TAB_TYPE--EpBDp5bo\",\n        \"meta\": {\n            \"text\": \"District Wise Analysis\"\n        },\n        \"type\": \"DASHBOARD_TAB_TYPE\"\n    },\n    \"DASHBOARD_TAB_TYPE-YI5J-oKale\": {\n        \"children\": [\n            \"DASHBOARD_ROW_TYPE-vjE30yvSWt\"\n        ],\n        \"id\": \"DASHBOARD_TAB_TYPE-YI5J-oKale\",\n        \"meta\": {\n            \"text\": \"Timeseries Analysis\"\n        },\n        \"type\": \"DASHBOARD_TAB_TYPE\"\n    },\n    \"DASHBOARD_VERSION_KEY\": \"v2\"\n}", 
+                "created_on": {
+                    "__datetime__": "2019-02-28T08:17:05"
+                }, 
+                "changed_on": {
+                    "__datetime__": "2019-03-04T19:04:32"
+                }, 
+                "changed_by_fk": 1, 
+                "created_by_fk": 44, 
+                "id": 51, 
+                "css": ""
+            }
+        }
+    ], 
+    "datasources": [
+        {
+            "__SqlaTable__": {
+                "is_featured": false, 
+                "offset": 0, 
+                "main_dttm_col": "Timestamp", 
+                "created_on": {
+                    "__datetime__": "2019-02-28T12:49:29"
+                }, 
+                "created_by_fk": 44, 
+                "id": 135, 
+                "changed_on": {
+                    "__datetime__": "2019-02-28T12:50:38"
+                }, 
+                "template_params": "", 
+                "cache_timeout": null, 
+                "user_id": 44, 
+                "default_endpoint": "", 
+                "perm": "[Krishna District AP].[AP_Child_Treasury_Data](id:135)", 
+                "params": "{\"database_name\": \"Krishna District AP\", \"remote_id\": 135}", 
+                "filter_select_enabled": false, 
+                "changed_by_fk": 44, 
+                "columns": [
+                    {
+                        "__TableColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "avg": false, 
+                            "id": 3018, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T14:44:15"
+                            }, 
+                            "created_by_fk": 44, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 44, 
+                            "verbose_name": null, 
+                            "column_name": "District", 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "type": "TEXT", 
+                            "table_id": 135, 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__TableColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "avg": true, 
+                            "id": 3019, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T14:44:13"
+                            }, 
+                            "created_by_fk": 44, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": true, 
+                            "database_expression": null, 
+                            "changed_by_fk": 44, 
+                            "verbose_name": null, 
+                            "column_name": "Year", 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "type": "BIGINT", 
+                            "table_id": 135, 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__TableColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "avg": false, 
+                            "id": 3020, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T14:44:11"
+                            }, 
+                            "created_by_fk": 44, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 44, 
+                            "verbose_name": null, 
+                            "column_name": "Month", 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "type": "TEXT", 
+                            "table_id": 135, 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__TableColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "avg": false, 
+                            "id": 3021, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T14:44:11"
+                            }, 
+                            "created_by_fk": 44, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": true, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 44, 
+                            "verbose_name": null, 
+                            "column_name": "Timestamp", 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "type": "DATETIME", 
+                            "table_id": 135, 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__TableColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "avg": false, 
+                            "id": 3022, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T14:44:10"
+                            }, 
+                            "created_by_fk": 44, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 44, 
+                            "verbose_name": null, 
+                            "column_name": "Head of Account", 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "type": "TEXT", 
+                            "table_id": 135, 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__TableColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "avg": true, 
+                            "id": 3023, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T14:44:08"
+                            }, 
+                            "created_by_fk": 44, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": true, 
+                            "database_expression": null, 
+                            "changed_by_fk": 44, 
+                            "verbose_name": null, 
+                            "column_name": "Major Head", 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "type": "BIGINT", 
+                            "table_id": 135, 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__TableColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "avg": true, 
+                            "id": 3024, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T14:44:09"
+                            }, 
+                            "created_by_fk": 44, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": true, 
+                            "database_expression": null, 
+                            "changed_by_fk": 44, 
+                            "verbose_name": null, 
+                            "column_name": "Sub Major Head", 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "type": "BIGINT", 
+                            "table_id": 135, 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__TableColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "avg": true, 
+                            "id": 3025, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T14:44:06"
+                            }, 
+                            "created_by_fk": 44, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": true, 
+                            "database_expression": null, 
+                            "changed_by_fk": 44, 
+                            "verbose_name": null, 
+                            "column_name": "Minor Head", 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "type": "BIGINT", 
+                            "table_id": 135, 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__TableColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "avg": true, 
+                            "id": 3026, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T14:44:04"
+                            }, 
+                            "created_by_fk": 44, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": true, 
+                            "database_expression": null, 
+                            "changed_by_fk": 44, 
+                            "verbose_name": null, 
+                            "column_name": "Group Sub Head", 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "type": "BIGINT", 
+                            "table_id": 135, 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__TableColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "avg": true, 
+                            "id": 3027, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T14:44:05"
+                            }, 
+                            "created_by_fk": 44, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": true, 
+                            "database_expression": null, 
+                            "changed_by_fk": 44, 
+                            "verbose_name": null, 
+                            "column_name": "Sub Head", 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "type": "BIGINT", 
+                            "table_id": 135, 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__TableColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "avg": true, 
+                            "id": 3028, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T14:44:02"
+                            }, 
+                            "created_by_fk": 44, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": true, 
+                            "database_expression": null, 
+                            "changed_by_fk": 44, 
+                            "verbose_name": null, 
+                            "column_name": "Detailed Head", 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "type": "BIGINT", 
+                            "table_id": 135, 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__TableColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "avg": true, 
+                            "id": 3029, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T14:44:00"
+                            }, 
+                            "created_by_fk": 44, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": true, 
+                            "database_expression": null, 
+                            "changed_by_fk": 44, 
+                            "verbose_name": null, 
+                            "column_name": "Sub Detailed Head", 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "type": "BIGINT", 
+                            "table_id": 135, 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__TableColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "avg": false, 
+                            "id": 3030, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T14:43:59"
+                            }, 
+                            "created_by_fk": 44, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 44, 
+                            "verbose_name": null, 
+                            "column_name": "Plan/Non Plan", 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "type": "TEXT", 
+                            "table_id": 135, 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__TableColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "avg": false, 
+                            "id": 3031, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T14:43:58"
+                            }, 
+                            "created_by_fk": 44, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 44, 
+                            "verbose_name": null, 
+                            "column_name": "Voted/Charged", 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "type": "TEXT", 
+                            "table_id": 135, 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__TableColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "avg": false, 
+                            "id": 3032, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T14:43:57"
+                            }, 
+                            "created_by_fk": 44, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 44, 
+                            "verbose_name": null, 
+                            "column_name": "Major Head Type", 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "type": "TEXT", 
+                            "table_id": 135, 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__TableColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "avg": false, 
+                            "id": 3033, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T14:43:56"
+                            }, 
+                            "created_by_fk": 44, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 44, 
+                            "verbose_name": null, 
+                            "column_name": "Major Head Description", 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "type": "TEXT", 
+                            "table_id": 135, 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__TableColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "avg": false, 
+                            "id": 3034, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T14:43:55"
+                            }, 
+                            "created_by_fk": 44, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 44, 
+                            "verbose_name": null, 
+                            "column_name": "Sub Major Head Description", 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "type": "TEXT", 
+                            "table_id": 135, 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__TableColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "avg": false, 
+                            "id": 3035, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T14:43:53"
+                            }, 
+                            "created_by_fk": 44, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 44, 
+                            "verbose_name": null, 
+                            "column_name": "Minor Head Description", 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "type": "TEXT", 
+                            "table_id": 135, 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__TableColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "avg": false, 
+                            "id": 3036, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T14:43:52"
+                            }, 
+                            "created_by_fk": 44, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 44, 
+                            "verbose_name": null, 
+                            "column_name": "Group Sub Head Description", 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "type": "TEXT", 
+                            "table_id": 135, 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__TableColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "avg": false, 
+                            "id": 3037, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T14:43:50"
+                            }, 
+                            "created_by_fk": 44, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 44, 
+                            "verbose_name": null, 
+                            "column_name": "Sub Head Description", 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "type": "TEXT", 
+                            "table_id": 135, 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__TableColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "avg": false, 
+                            "id": 3038, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T14:43:48"
+                            }, 
+                            "created_by_fk": 44, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 44, 
+                            "verbose_name": null, 
+                            "column_name": "Detailed Head Description", 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "type": "TEXT", 
+                            "table_id": 135, 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__TableColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "avg": false, 
+                            "id": 3039, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T14:43:46"
+                            }, 
+                            "created_by_fk": 44, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": false, 
+                            "database_expression": null, 
+                            "changed_by_fk": 44, 
+                            "verbose_name": null, 
+                            "column_name": "Sub Detailed Head Description", 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "type": "TEXT", 
+                            "table_id": 135, 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }, 
+                    {
+                        "__TableColumn__": {
+                            "python_date_format": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "avg": true, 
+                            "id": 3040, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T14:43:49"
+                            }, 
+                            "created_by_fk": 44, 
+                            "min": false, 
+                            "filterable": true, 
+                            "is_dttm": false, 
+                            "sum": true, 
+                            "database_expression": null, 
+                            "changed_by_fk": 44, 
+                            "verbose_name": null, 
+                            "column_name": "Amount", 
+                            "description": null, 
+                            "max": false, 
+                            "is_active": true, 
+                            "type": "BIGINT", 
+                            "table_id": 135, 
+                            "expression": "", 
+                            "groupby": true, 
+                            "count_distinct": false
+                        }
+                    }
+                ], 
+                "schema": "", 
+                "fetch_values_predicate": "", 
+                "description": "", 
+                "metrics": [
+                    {
+                        "__SqlMetric__": {
+                            "description": null, 
+                            "d3format": null, 
+                            "verbose_name": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "warning_text": null, 
+                            "table_id": 135, 
+                            "changed_by_fk": 44, 
+                            "metric_type": "avg", 
+                            "is_restricted": false, 
+                            "created_by_fk": 44, 
+                            "expression": "AVG(Year)", 
+                            "id": 2036, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "metric_name": "avg__Year"
+                        }
+                    }, 
+                    {
+                        "__SqlMetric__": {
+                            "description": null, 
+                            "d3format": null, 
+                            "verbose_name": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "warning_text": null, 
+                            "table_id": 135, 
+                            "changed_by_fk": 44, 
+                            "metric_type": "sum", 
+                            "is_restricted": false, 
+                            "created_by_fk": 44, 
+                            "expression": "SUM(Year)", 
+                            "id": 2037, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "metric_name": "sum__Year"
+                        }
+                    }, 
+                    {
+                        "__SqlMetric__": {
+                            "description": null, 
+                            "d3format": null, 
+                            "verbose_name": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "warning_text": null, 
+                            "table_id": 135, 
+                            "changed_by_fk": 44, 
+                            "metric_type": "avg", 
+                            "is_restricted": false, 
+                            "created_by_fk": 44, 
+                            "expression": "AVG(Major Head)", 
+                            "id": 2038, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "metric_name": "avg__Major Head"
+                        }
+                    }, 
+                    {
+                        "__SqlMetric__": {
+                            "description": null, 
+                            "d3format": null, 
+                            "verbose_name": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "warning_text": null, 
+                            "table_id": 135, 
+                            "changed_by_fk": 44, 
+                            "metric_type": "sum", 
+                            "is_restricted": false, 
+                            "created_by_fk": 44, 
+                            "expression": "SUM(Major Head)", 
+                            "id": 2039, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "metric_name": "sum__Major Head"
+                        }
+                    }, 
+                    {
+                        "__SqlMetric__": {
+                            "description": null, 
+                            "d3format": null, 
+                            "verbose_name": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "warning_text": null, 
+                            "table_id": 135, 
+                            "changed_by_fk": 44, 
+                            "metric_type": "avg", 
+                            "is_restricted": false, 
+                            "created_by_fk": 44, 
+                            "expression": "AVG(Sub Major Head)", 
+                            "id": 2040, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "metric_name": "avg__Sub Major Head"
+                        }
+                    }, 
+                    {
+                        "__SqlMetric__": {
+                            "description": null, 
+                            "d3format": null, 
+                            "verbose_name": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "warning_text": null, 
+                            "table_id": 135, 
+                            "changed_by_fk": 44, 
+                            "metric_type": "sum", 
+                            "is_restricted": false, 
+                            "created_by_fk": 44, 
+                            "expression": "SUM(Sub Major Head)", 
+                            "id": 2041, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "metric_name": "sum__Sub Major Head"
+                        }
+                    }, 
+                    {
+                        "__SqlMetric__": {
+                            "description": null, 
+                            "d3format": null, 
+                            "verbose_name": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "warning_text": null, 
+                            "table_id": 135, 
+                            "changed_by_fk": 44, 
+                            "metric_type": "avg", 
+                            "is_restricted": false, 
+                            "created_by_fk": 44, 
+                            "expression": "AVG(Minor Head)", 
+                            "id": 2042, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "metric_name": "avg__Minor Head"
+                        }
+                    }, 
+                    {
+                        "__SqlMetric__": {
+                            "description": null, 
+                            "d3format": null, 
+                            "verbose_name": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "warning_text": null, 
+                            "table_id": 135, 
+                            "changed_by_fk": 44, 
+                            "metric_type": "sum", 
+                            "is_restricted": false, 
+                            "created_by_fk": 44, 
+                            "expression": "SUM(Minor Head)", 
+                            "id": 2043, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "metric_name": "sum__Minor Head"
+                        }
+                    }, 
+                    {
+                        "__SqlMetric__": {
+                            "description": null, 
+                            "d3format": null, 
+                            "verbose_name": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "warning_text": null, 
+                            "table_id": 135, 
+                            "changed_by_fk": 44, 
+                            "metric_type": "avg", 
+                            "is_restricted": false, 
+                            "created_by_fk": 44, 
+                            "expression": "AVG(Group Sub Head)", 
+                            "id": 2044, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "metric_name": "avg__Group Sub Head"
+                        }
+                    }, 
+                    {
+                        "__SqlMetric__": {
+                            "description": null, 
+                            "d3format": null, 
+                            "verbose_name": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "warning_text": null, 
+                            "table_id": 135, 
+                            "changed_by_fk": 44, 
+                            "metric_type": "sum", 
+                            "is_restricted": false, 
+                            "created_by_fk": 44, 
+                            "expression": "SUM(Group Sub Head)", 
+                            "id": 2045, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "metric_name": "sum__Group Sub Head"
+                        }
+                    }, 
+                    {
+                        "__SqlMetric__": {
+                            "description": null, 
+                            "d3format": null, 
+                            "verbose_name": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "warning_text": null, 
+                            "table_id": 135, 
+                            "changed_by_fk": 44, 
+                            "metric_type": "sum", 
+                            "is_restricted": false, 
+                            "created_by_fk": 44, 
+                            "expression": "SUM(Sub Head)", 
+                            "id": 2046, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "metric_name": "sum__Sub Head"
+                        }
+                    }, 
+                    {
+                        "__SqlMetric__": {
+                            "description": null, 
+                            "d3format": null, 
+                            "verbose_name": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "warning_text": null, 
+                            "table_id": 135, 
+                            "changed_by_fk": 44, 
+                            "metric_type": "avg", 
+                            "is_restricted": false, 
+                            "created_by_fk": 44, 
+                            "expression": "AVG(Sub Head)", 
+                            "id": 2047, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "metric_name": "avg__Sub Head"
+                        }
+                    }, 
+                    {
+                        "__SqlMetric__": {
+                            "description": null, 
+                            "d3format": null, 
+                            "verbose_name": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "warning_text": null, 
+                            "table_id": 135, 
+                            "changed_by_fk": 44, 
+                            "metric_type": "sum", 
+                            "is_restricted": false, 
+                            "created_by_fk": 44, 
+                            "expression": "SUM(Detailed Head)", 
+                            "id": 2048, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "metric_name": "sum__Detailed Head"
+                        }
+                    }, 
+                    {
+                        "__SqlMetric__": {
+                            "description": null, 
+                            "d3format": null, 
+                            "verbose_name": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "warning_text": null, 
+                            "table_id": 135, 
+                            "changed_by_fk": 44, 
+                            "metric_type": "avg", 
+                            "is_restricted": false, 
+                            "created_by_fk": 44, 
+                            "expression": "AVG(Detailed Head)", 
+                            "id": 2049, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "metric_name": "avg__Detailed Head"
+                        }
+                    }, 
+                    {
+                        "__SqlMetric__": {
+                            "description": null, 
+                            "d3format": null, 
+                            "verbose_name": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "warning_text": null, 
+                            "table_id": 135, 
+                            "changed_by_fk": 44, 
+                            "metric_type": "sum", 
+                            "is_restricted": false, 
+                            "created_by_fk": 44, 
+                            "expression": "SUM(Sub Detailed Head)", 
+                            "id": 2050, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "metric_name": "sum__Sub Detailed Head"
+                        }
+                    }, 
+                    {
+                        "__SqlMetric__": {
+                            "description": null, 
+                            "d3format": null, 
+                            "verbose_name": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "warning_text": null, 
+                            "table_id": 135, 
+                            "changed_by_fk": 44, 
+                            "metric_type": "avg", 
+                            "is_restricted": false, 
+                            "created_by_fk": 44, 
+                            "expression": "AVG(Sub Detailed Head)", 
+                            "id": 2051, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "metric_name": "avg__Sub Detailed Head"
+                        }
+                    }, 
+                    {
+                        "__SqlMetric__": {
+                            "description": null, 
+                            "d3format": null, 
+                            "verbose_name": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "warning_text": null, 
+                            "table_id": 135, 
+                            "changed_by_fk": 44, 
+                            "metric_type": "sum", 
+                            "is_restricted": false, 
+                            "created_by_fk": 44, 
+                            "expression": "SUM(Amount)", 
+                            "id": 2052, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "metric_name": "sum__Amount"
+                        }
+                    }, 
+                    {
+                        "__SqlMetric__": {
+                            "description": null, 
+                            "d3format": null, 
+                            "verbose_name": null, 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "warning_text": null, 
+                            "table_id": 135, 
+                            "changed_by_fk": 44, 
+                            "metric_type": "avg", 
+                            "is_restricted": false, 
+                            "created_by_fk": 44, 
+                            "expression": "AVG(Amount)", 
+                            "id": 2053, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "metric_name": "avg__Amount"
+                        }
+                    }, 
+                    {
+                        "__SqlMetric__": {
+                            "description": null, 
+                            "d3format": null, 
+                            "verbose_name": "COUNT(*)", 
+                            "created_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "warning_text": null, 
+                            "table_id": 135, 
+                            "changed_by_fk": 44, 
+                            "metric_type": "count", 
+                            "is_restricted": false, 
+                            "created_by_fk": 44, 
+                            "expression": "COUNT(*)", 
+                            "id": 2054, 
+                            "changed_on": {
+                                "__datetime__": "2019-02-28T12:49:29"
+                            }, 
+                            "metric_name": "count"
+                        }
+                    }
+                ], 
+                "sql": "", 
+                "database": {
+                    "__Database__": {
+                        "allow_run_sync": true, 
+                        "allow_ctas": false, 
+                        "allow_multi_schema_metadata_fetch": true, 
+                        "created_on": {
+                            "__datetime__": "2018-07-30T18:09:05"
+                        }, 
+                        "cache_timeout": null, 
+                        "id": 4, 
+                        "allow_csv_upload": true, 
+                        "created_by_fk": 1, 
+                        "extra": "{\r\n    \"metadata_params\": {},\r\n    \"engine_params\": {}\r\n}\r\n", 
+                        "perm": "[Krishna District AP].(id:4)", 
+                        "changed_on": {
+                            "__datetime__": "2018-07-30T18:09:17"
+                        }, 
+                        "changed_by_fk": 1, 
+                        "verbose_name": null, 
+                        "expose_in_sqllab": true, 
+                        "allow_dml": false, 
+                        "allow_run_async": true, 
+                        "password": null, 
+                        "select_as_create_table_as": false, 
+                        "database_name": "Krishna District AP", 
+                        "sqlalchemy_uri": "sqlite://///home/ubuntu/db/district_treasuries_ap.sqlite", 
+                        "impersonate_user": false, 
+                        "force_ctas_schema": ""
+                    }
+                }, 
+                "database_id": 4, 
+                "table_name": "AP_Child_Treasury_Data", 
+                "is_sqllab_view": false
+            }
+        }
+    ]
+}

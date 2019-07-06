@@ -1,7 +1,12 @@
 # child-budget-tracker
 We are working to develop a comprehensive - Child Budget Tracker that will automatically analyze budget and spending data from various tiers of governments including Union, States, Districts, Sub-districts and Municipalities.
+
+### Data Source
+Raw Data is pulled from our initiative Open Budgets India: https://openbudgetsindia.org/organization/about/district-treasuries-in-andhra-pradesh
+
 ### Requirenments
 While Jupyter runs code in many programming languages, Python is a requirement (Python 3.3 or greater, or Python 2.7) for installing the Jupyter Notebook.
+
 ### Installation
 
 ```
@@ -22,6 +27,7 @@ $ jupyter notebook
 Standard OSS rules. 
 
 ### Credits
+Apache Superset: http://superset.incubator.apache.org/
 
 ### License
-The project is licensed under the MIT license.
+The project is licensed under the AGPL v3.0 license.
